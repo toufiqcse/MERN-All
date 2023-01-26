@@ -1,34 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import PriceOption from "./PriceOption";
-
+import products from "../data/products";
 const Pricing = () => {
-  const products = [
-    {
-      id: 11,
-      name: "Free",
-      price: 0,
-      features: ["Awosome Features", "Everything is free"],
-    },
-    {
-      id: 20,
-      name: "Premium",
-      price: 30.44,
-      features: ["Awosome Features", "Everything is free"],
-    },
-    {
-      id: 30,
-      name: "Paid",
-      price: 23.65,
-      features: ["Awosome Features", "Everything is free"],
-    },
-    {
-      id: 40,
-      name: "Post Paid",
-      price: 60.56,
-      features: ["Awosome Features", "Everything is free"],
-    },
-  ];
   return (
     <Stack>
       <Typography
@@ -58,7 +32,7 @@ const Pricing = () => {
         }}
       >
         {products.map((product) => (
-          <PriceOption key={product.id} product={product}></PriceOption>
+          <PriceOption key={product.ser} product={product}></PriceOption>
         ))}
       </Box>
     </Stack>

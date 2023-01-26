@@ -1,9 +1,11 @@
 // @ts-nocheck
-import Main from "./components/main/main";
+
+import Banner from "./components/Banner/Banner";
+
 function App() {
   return (
     <div className="App">
-      <Main></Main>
+      <Banner></Banner>
     </div>
   );
 }

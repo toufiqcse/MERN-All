@@ -19,7 +19,7 @@ const Navbar = () => {
     { id: 31, name: "Products", path: "" },
     { id: 41, name: "Orders", path: "" },
     { id: 51, name: "About", path: "" },
-    { id: 51, name: "Contact US", path: "" },
+    { id: 599, name: "Contact US", path: "" },
   ];
   const [value, setValue] = useState();
   // for responsive menu items
@@ -60,7 +60,6 @@ const Navbar = () => {
                     label={route.name}
                     href={route.path}
                   ></Tab>
-                  //   <NavLink key={route.id} route={route}></NavLink>
                 ))}
               </Tabs>
               <Button sx={{ marginLeft: "auto" }} variant="contained">

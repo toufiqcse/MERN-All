@@ -2,8 +2,8 @@ import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 import Features from "./Features";
 
-const PriceOption = (props) => {
-  const { name, price, features } = props.product;
+const PriceOption = ({ product }) => {
+  const { name, price, features } = product;
 
   return (
     <Stack sx={{ mt: 2, p: 2 }}>
